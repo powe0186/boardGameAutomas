@@ -1,0 +1,79 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    background-color: #E4F8CF;
+}
+
+header {
+    background-color: #0F5B54;
+    margin: 0px;
+    padding: 10px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#title {
+    font-size: 3em;
+}
+
+#navbar > li, a {
+    display: inline-block;
+    color: white;
+}
+
+#main-wrapper {
+    margin-top: 3em;
+    margin-left: 10vw;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-gap: 1em 1em;
+}
+
+#about-me {
+    display: block;
+    border-style: solid;
+    border-color: black;
+    background-color: #20bdad;
+    border-radius: 0.5em;
+}
+
+#gaming-info {
+    display: block;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.5em;
+    background-color: #4974a7;
+}
+
+.games-pic {
+    height: 10em;
+    margin-left: 3em;
+}
+
+h3 {
+    text-align: center;
+}
+
+#gamesList-button {
+    display: inline-block;
+    background-color: #DB5B17;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.5em;
+    width: 100%;
+
+}
+
+#gameButton {
+    display: flex;
+    justify-content: center;
+}
+
+p, #collection-link {
+    margin-left: 2em;
+    margin-right: 2em;
+}

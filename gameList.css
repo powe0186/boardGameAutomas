@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    background-color: #E4F8CF;
+}
+
+header {
+    background-color: #0F5B54;
+    margin: 0px;
+    padding: 10px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#title {
+    font-size: 3em;
+}
+
+#navbar > li, a {
+    display: inline-block;
+    color: white;
+}
+
+#games-grid {
+    margin: 3em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game-pic {
+    height: 12em;
+}

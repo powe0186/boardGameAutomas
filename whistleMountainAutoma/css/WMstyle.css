@@ -1,0 +1,132 @@
+
+/* Find a good font for Whistle Stop and put it in here. */
+
+html  {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    background-color: #fde073;
+}
+
+header {
+    background-color: #850214;
+    padding: 10px;
+}
+
+a {
+    color: #fcfcfc;
+}
+
+#home {
+    margin-right: auto;
+}
+#title {
+    color: #fcfcfc;
+    font-size: 2em;
+    font-family: "Brush Script MT";
+    margin: auto;
+}
+
+.nav-link {
+margin-right: 1em;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar > li {
+    display: inline-block;
+    
+}
+
+#card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#card-deck {
+    height: 16em;
+    border-radius: 0.5em;
+    border-style: solid;
+    border-color: black;
+}
+
+#card-board,
+#deck-and-button {
+    margin-top: 2em;
+}
+
+#die {
+    margin-top: 8em;
+}
+
+#die-pic {
+    border-radius: 1em;
+}
+
+#card-board {
+    background: url(../images/card_board.png) center / cover no-repeat #850214;
+    height: 20em;
+    width: 40em;
+    border-radius: 2em;
+}
+
+.card {
+    position: absolute;
+    margin-top: 3.8em;
+    height: 14.5em;
+    border-radius: 0.5em;
+    border-style: solid;
+    border-color: black;
+}
+
+#card-one-two {
+    margin-left: 2em;
+}
+
+#card-three-four {
+    margin-left: 15em;
+}
+
+#card-five-six {
+    margin-left: 27em;
+}
+
+#deck-and-button {
+    display: flex;
+    flex-direction: column;
+}
+
+#die-pic {
+    height: 5em;
+}
+
+#button {
+    margin-top: 1em;
+    display: inline-block;
+    background-color: #850214;
+    color: #fcfcfc;
+    border-style: solid;
+    border-radius: 1em;
+    border-color: black;
+}
+
+#button > p {
+    text-align: center;
+}
+
+#message {
+    color: black;
+    font-size: 5em;
+    margin-top: 0em;
+    padding-top: 0em;
+    display: none;
+}
