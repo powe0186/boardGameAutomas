@@ -125,8 +125,31 @@ margin-right: 1em;
 
 #message {
     color: black;
-    font-size: 5em;
+    font-size: 1.5em;
     margin-top: 0em;
     padding-top: 0em;
     display: none;
+    margin-left: 2.5em;
+}
+
+#actions {
+    display: flex;
+    margin: 2em;
+}
+
+#action1,
+#action2 {
+    color: white;
+    font-size: 1.5em;
+}
+
+.action-box {
+    display: block;
+    background-color:#850214;
+    color: white;
+    text-align: center;
+    width: 40em;
+    margin-top: 0.5em;
+    margin-right: 1em;
+    padding: 0em;
 }

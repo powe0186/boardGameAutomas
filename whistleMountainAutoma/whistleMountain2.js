@@ -8,6 +8,8 @@ const card1 = document.getElementById("card1");
 const card2 = document.getElementById("card2");
 const card3 = document.getElementById("card3");
 const message = document.getElementById("message");
+const action1 = document.getElementById("action1");
+const action2 = document.getElementById("action2");
 
 // Create Arrays to hold cards in card1, card2, and card3.
 var inPlay1 = [];
@@ -105,14 +107,19 @@ function rollDie() {
     const dieRoll = Math.floor(Math.random() * 6 + 1);
     console.log(outlawCardDeck.length);
     var cardSelected;
+    var card;
     if (dieRoll < 3) {
         cardSelected = document.getElementById(`card1`);
+        card = inPlay1[0];
     } else if (dieRoll < 5) {
         cardSelected = document.getElementById(`card2`);
+        card = inPlay2[0];
     } else {
         cardSelected = document.getElementById(`card3`);
+        card = inPlay3[0];
     }
     cardSelected.style.border = 'solid 0.5em #fde073';
+    showActions(card);
     
     // Show die Roll on picture of die.
     document.getElementById('die-pic').src = `images/Die${dieRoll}.PNG`;
@@ -127,3 +134,8 @@ function resetDeck(mainDeck, deck1, deck2, deck3) {
 
 //add event listener to the button
 button.addEventListener("click", buttonClicked);
+
+function showActions(card) {
+    action1.innerHTML = `Action #1: ${card.action1}`;
+    action2.innerHTML = `Action #2: ${card.action2}`;
+}
